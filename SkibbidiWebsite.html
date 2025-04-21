@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Church Of Skibbidi</title>
+  <link rel="stylesheet" href="ChurchOfSkibbidi/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Charm&amp;display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="SkibidiImg/favicon/favicon.png">
+</head>
+<header>
+</header>
+
+<body>
+  <!-- NavBarCode -->
+  <div class="navbar">
+    <a href="SkibbidiWebsite.html">Home</a>
+    <div class="dropdown">
+      <a href="SkibidiWorship.html" class="dropbtn">Worship</a>
+      <div class="dropdown-content">
+        <a href="Prayer.html">Prayers</a>
+        <a href="Songs.html">Songs</a>
+        <a href="AltarGuide.html">Altar Guide</a>
+      </div>
+    </div>
+    <a href="Sermons.html">Sermons</a>
+    <a href="Commandments.html">Commandments</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Donate.html">Donate</a>
+    </div>
+    <!-- NavBarCodeEnd -->
+  <main class="skibbidi-page">
+    <div class="video-bannerHomePage">
+      <div class="color-wash">
+      <video class="fade-gradient" autoplay muted loop playsinline>
+        <source src="SkibidiVid/Wheat.mp4" type="video/webm">
+        <source src="SkibidiVid/Wheat2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      </div>
+      <div class="overlay-textHomePage">
+        <h1>Church Of Skibidi</h1>
+      </div>
+    </div>
+  
+<!-- Traveling Wave Effect -->
+<svg class="wave-divider" viewBox="0 0 1440 150">
+  <path id="wavePath" style="fill:#3C291E;" d="M0,60 C480,150 960,-30 1440,60 L1440,150 L0,150 Z"></path>
+</svg>
+<script>
+  const wavePath = document.getElementById("wavePath");
+  let progress = 0.02;
+  
+  function animateWave() {
+      progress += 0.03;
+      let shift = Math.sin(progress) * 100;
+  
+      wavePath.setAttribute("d", `M0,60 C480,${-30 + shift} 960,${-60 - shift} 1440,60 L1440,150 L0,150 Z`);
+  
+      requestAnimationFrame(animateWave);
+  }
+  
+  animateWave();
+  </script>
+
+
+  <div class="Skibiditopimg"><img src="SkibidiImg/SkibidiSymbolNoBackgroundReal.png" alt="Skibidi Image"
+    style="width: 100%; height: 120px;" />
+</div>
+<div class="images">
+<div class="Community"><img src="SkibidiImg/Community.jpg" alt="Skibidi Image"
+  style="width: 100%; height: 100%;" style="border-radius: 20px;" />
+  <p>Done with respect for nature—our mission was a true reflection of Skibidi’s teachings. As we camped under the open sky, we embraced courage in service and honesty in fellowship, deepening our bond with one another and with Him. This experience renewed our purpose, reminding us that faith is lived through action, together in unity.</p>
+</div>
+<div class="Happy"><img src="SkibidiImg/Happy.jpg" alt="Skibidi Image"
+  style="width: 100%; height: 100%;" style="border-radius: 20px;" />
+  <p>Kindness reflects Skibidi’s teachings, strengthening souls and bringing light through every act of care.</p>
+</div>
+<div class="Baptize"><img src="SkibidiImg/Baptize.jpg" alt="Skibidi Image"
+  style="width: 100%; height: 100%;" style="border-radius: 20px;" />
+  <p>In Skibidism, baptizing babies and children is considered taboo, as we believe baptism should be a sacred, conscious choice—one that individuals must opt into when they are ready to embrace their faith.</p>
+</div>
+
+      <div>
+        <div class="SkibidiHomeQuote">
+          <p>Imbued with <strong>Power</strong> ● Led with <strong>Respect</strong> ● Strengthened by <strong>Acceptance</strong> ● Guided by <strong>Courage</strong> ● and Defined by <strong>Honesty</strong>.</p>
+        </div>
+        <!-- SKibbidi Img and Quote End -->
+        <div class="SkibidiMission">
+          <p>Here at The Church of Skibidi, we aim to create a world full of kindness, love, acceptance courage, and
+            honesty. Through the teachings of Skibidi, we create a community of people working to make the world around
+            them a better, happier place. All genders races and sexualities are welcome here, bigotry has no place here.
+            We would love to have you here for our next meet!</p>
+        </div>
+        <!--MissonStatementEnd-->
+        <div class="Mission">
+          <p>Our Mission</p>
+        </div>
+      </main class="skibbidi-page">
+  <footer>
+    <script>document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".SkibidiHomeIMG, .SkibidiHomeQuote, .SkibidiMission, .Mission, .SkibidiPledge, .video-bannerHomePage .overlay-textHomePage, .video-bannerHomePage h1");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("hidden");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => {
+        el.classList.add("hidden"); // Initially hide elements
+        observer.observe(el);
+    });
+});</script>
+    <div id="footer-text">
+      <p>&copy; Abigail Widmeyer 2025</p>
+    </div>
+  </footer>
+  <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    h1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 50px;
+        z-index: 5;
+    }
+    
+    html,
+    body {
+        min-height: 100vh;
+        min-width: 100vw;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        color: beige;
+        font-family: Charm, sans-serif;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+    
+    
+    main {
+        min-height: 1900px;
+        width: 100%;
+        height: 90px;
+        background-image: url('church-7784705_1280.jpg');
+        background-size: cover; /* Ensures the image covers the whole area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        z-index: 9;
+    }
+    
+    /* NavBarCode */
+    .navbar {
+        background-color: transparent;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        gap: 100px;
+        position: absolute;
+        top: 150px;
+        left: 10%;
+        z-index: 9999;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+    
+    .navbar a:hover {
+        background-color: transparent;
+        border-radius: 5px;
+    }
+    
+    /* Dropdown menu */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropbtn {
+        color: white;
+        padding: 10px 15px;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #3C291E;
+        min-width: 150px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        border-bottom-right-radius: 30px;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #2C221C;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:focus-within .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown-content {
+        z-index: 9999;
+    }
+    /*Navbar End*/
+    .Community {
+        position: absolute;
+        left: 5%;
+        top: 850px;
+        width: 400px;
+        height: auto;
+    }
+    
+    .Happy {
+        position: absolute;
+        left: 42%;
+        top: 850px;
+        width: 200px;
+        height: auto;
+    }
+    
+    .Baptize {
+        position: absolute;
+        right: 5%;
+        top: 850px;
+        width: 400px;
+        height: auto;
+    }
+    
+    footer {
+        width: 100%;
+        height: 30px;
+        background-color: #2C221C;
+        color: beige;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: flex-end;
+        position: absolute;
+        top: auto;
+    }
+    
+    /*Worship Page Starts*/
+    /*Worship Headings*/
+    .WhyWorshipHeading h1 {
+        position: absolute;
+        top: 305px;
+        left: 250px;
+        width: auto;
+        font-size: 25px;
+        z-index: 5;
+    }
+    
+    .HowToWorshipHeading h1 {
+        position: absolute;
+        top: 305px;
+        Right: 195px;
+        width: auto;
+        font-size: 25px;
+        z-index: 5;
+    }
+    .WorshipHeading h1{
+        position: absolute;
+        top: 220px;
+        left: 30%;
+        width: 500px;
+        z-index: 5;
+    }
+    .HowToWorship {
+        color: beige;
+        font-family: Charm, sans-serif;
+        font-size: 20px;
+        position: absolute;
+        top: 350;
+        Right: 90px;
+        width: 40%;
+        height: 200px;
+        text-align: center;
+        z-index: 5;
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    .HowToWorship {
+        color: beige;
+        font-family: Charm, sans-serif;
+        font-size: 20px;
+        position: absolute;
+        top: 350px;
+        Right: 90px;
+        width: 40%;
+        height: 200px;
+        text-align: center;
+        z-index: 5;
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    .HowToWorship P{
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    .WhyWorship P{
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    .WhyWorship {
+        color: beige;
+        font-family: Charm, sans-serif;
+        font-size: 20px;
+        position: absolute;
+        top: 350px;
+        left: 90px;
+        width: 40%;
+        height: 200px;
+        text-align: center;
+        z-index: 5;
+        border-radius: 10%;
+    }
+    
+    /*Altar Guide*/
+    .AltarCareHeading h1 {
+        position: absolute;
+        top: 305px;
+        Right: 225px;
+        width: auto;
+        font-size: 25px;
+        z-index: 5;
+    }
+    
+    .AltarCare {
+        color: beige;
+        font-family: Charm, sans-serif;
+        font-size: 20px;
+        position: absolute;
+        top: 350px;
+        Right: 59px;
+        width: 41%;
+        height: 200px;
+        z-index: 5;
+        border-radius: 10%;
+        background-color: #3C291E;
+    }
+    .AltarCare p{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        background-color: #3C291E;
+    }
+    
+    .AltarCrearionHeading h1 {
+        position: absolute;
+        top: 305px;
+        Left: 230px;
+        width: auto;
+        font-size: 25px;
+        z-index: 5;
+    }
+    
+    .AltarCrearion {
+        color: beige;
+        font-family: Charm, sans-serif;
+        font-size: 20px;
+        position: absolute;
+        top: 350px;
+        Left: 59px;
+        width: 40%;
+        height: 230px;
+        z-index: 5;
+        border-radius: 10%;
+        background-color: #3C291E;
+    }
+    .AltarCrearion p{
+        border-radius: 10%;
+        background-color: #3C291E;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        Left: 10px;
+        top: 10px;
+    }
+    .AltarCrearion ul {
+        color: beige;
+        font-family: Charm, sans-serif;
+        font-size: 17px;
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        width: auto;
+        height: auto;
+        column-count: 2;
+        column-gap: 10px;
+        list-style-position: inside;
+        z-index: 5;
+        border-radius: 10%;
+        background-color: #3C291E;
+    }
+    .Offerings{
+        border-radius: 10%;
+        background-color: #3C291E;
+        position: absolute;
+        top: 305px;
+        left: 370px;
+        width: 90%;
+        height: 100%;
+    }
+    
+    .AltarCrearion h1 {
+        position: absolute;
+        top: 260px;
+        left: 450px;
+        width: 300px;
+        font-size: 25px;
+        z-index: 5;
+    }
+    
+    .hover-target {
+        color: #ffffff;
+        /* Green text */
+        cursor: pointer;
+        /* Indicates interactivity */
+        position: relative;
+        /* Ensures relative positioning for the hover box */
+        height: 10px;
+        width: 10px;
+    }
+    
+    .hover-box {
+        display: none;
+        /* Hidden by default */
+        position: absolute;
+        /* Ensures it overlays other elements */
+        background-color: #3C291E;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #cacaca;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        width: 200px;
+        /* Long square dimensions */
+        height: 100px;
+        /* Long square dimensions */
+        top: 32%;
+        /* Adjusts position relative to its parent */
+        left: 12%;
+        /* Adjusts position relative to its parent */
+        z-index: 100;
+        /* Ensures it appears above other elements */
+    }
+    
+    /* Show the box when hovering over "alter" */
+    .hover-target:hover+.hover-box {
+        display: block;
+        /* Makes the box visible */
+    }
+    
+    li .hover-target {
+        color: #ffffff;
+        /* Green text */
+        cursor: pointer;
+        /* Indicates interactivity */
+        position: reabslative;
+        /* Ensures relative positioning for the hover box */
+        height: 10px;
+        width: 10px;
+    }
+    
+    li .hover-box {
+        display: none;
+        /* Hidden by default */
+        position: absolute;
+        /* Ensures it overlays other elements */
+        background-color: #3C291E;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #000000;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        width: 200px;
+        height: 100px;
+        top: 12%;
+        left: 12%;
+        z-index: 100;
+    }
+    li .hover-target:hover+.hover-box {
+        display: block;
+    }
+    
+    .TitleAltar h1 {
+        margin: 0;
+        font-size: 50px;
+        color: beige;
+        position: absolute;
+        top: auto;
+        width: 100%;
+        height: 50%;
+        z-index: 30;
+        left: 0%;
+        top: 220px;
+    }
+    /*Alterdone*/
+    
+    /*Prayer Page*/
+    .HowToPrayHeading h1 {
+        position: absolute;
+        top: 350px;
+        Right: 43.5%;
+        width: 100%;
+        font-size: 30px;
+        width: auto;
+        height: auto;
+        text-align: left;
+    }
+    
+    .HowToPray {
+        color: beige;
+        font-family: Charm, sans-serif;
+        font-size: 20px;
+        position: absolute;
+        top: 390px;
+        Right: 80px;
+        width: 85%;
+        height: 58%;
+        text-align: left;
+        border-radius: 10%;
+        background-color:#3C291E;;
+    }
+    .HowToPray p{
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        text-align: left;
+        border-radius: 10%;
+        background-color: #3C291E;
+    }
+    .overlay-textPray{
+        position: absolute;
+        top: 220px;
+        left: 30%;
+        width: 500px;
+        z-index: 5;
+    }
+    /*Prayer Page End*/
+    
+    .video-banner {
+        width: 100vw;
+        height: 30vh;
+        overflow: hidden;
+        border-radius: 5%;
+        display: inline-block;
+        top: -1885px;
+        position: relative;
+        z-index: 101;
+    }
+    
+    .video-banner video {
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5%;
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: none;
+    }
+    
+    /* Overlay text */
+    .video-banner .overlay-text {
+        position: absolute;
+        top: 103px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        z-index: 1;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #34374C 90%);
+        border-radius: 5%;
+    }
+    
+    .video-banner h1 {
+        font-size: 3rem;
+        margin: 0;
+        font-size: 50px;
+        color: beige;
+        position: absolute;
+        top: -7px;
+    }
+    
+    .video-banner::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        /* Semi-transparent dark overlay */
+        z-index: 0;
+    }
+    
+    
+    /*HomePage*/
+    .TitleHome h1 {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 43px;
+        left: 50%;
+    }
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+            /* Starts 20px below */
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+            /* Moves into place */
+        }
+    }
+    
+    .SkibidiHomeQuote {
+        opacity: 0;
+        /* Hide initially */
+        transform: translateY(20px);
+        /* Position below */
+        animation: slideUp 1s ease-out forwards;
+    }
+    
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+            /* Starts 20px below */
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+            /* Moves into place */
+        }
+    }
+    
+    .video-bannerHomePage h1 {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideUp 1s ease-out forwards;
+    }
+    
+    .SkibidiHomeQuote {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideUp 1s ease-out 0.5s forwards;
+        /* Delay of 0.5s */
+    }
+    
+    /* Navbar Styles */
+    .navbarhome {
+        background-color: transparent;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        gap: 100px;
+        position: absolute;
+        top: 150px;
+        left: 10%;
+        z-index: 9999;
+    }
+    
+    .navbarhome a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+    
+    .navbarhome a:hover {
+        background-color: transparent;
+        border-radius: 5px;
+    }
+    
+    /* Dropdown menu */
+    .dropdownhome {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropbtn {
+        color: white;
+        padding: 10px 15px;
+    }
+    
+    .dropdown-contenthome {
+        display: none;
+        position: absolute;
+        background-color: #3C291E;
+        min-width: 150px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        border-bottom-right-radius: 30px;
+    }
+    
+    .dropdown-contenthome a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .dropdown-contenthome a:hover {
+        background-color: #3C291E;
+    }
+    
+    .dropdownhome:hover .dropdown-contenthome {
+        display: block;
+    }
+    
+    .dropdownhome:focus-within .dropdown-contenthome {
+        display: block;
+    }
+    
+    .dropdown-contenthome {
+        z-index: 9999;
+    }
+    .SkibidiHomeIMG {
+        border-style: outset;
+        border-color: beige;
+        border-width: 10px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 720px;
+        left: 15px;
+        z-index: 3;
+    }
+    
+    .Skibiditopimg {
+        position: absolute;
+        top: 40px;
+        left: 43%;
+        z-index: 3;
+        width: auto;
+        height: 100%;
+    }
+    
+    /* SkibidiQuote */
+    .SkibidiHomeQuote {
+        color: beige;
+        font-family: Charm, sans-serif;
+        font-size: 25px;
+        position: absolute;
+        top: 63%;
+        left: 0%;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        z-index: 3;
+    }
+    
+    .SkibidiMission {
+        color: beige;
+        font-family: Charm, sans-serif;
+        font-size: 20px;
+        position: absolute;
+        left: 10%;
+        top: 650px;
+        width: 80%;
+        height: 200px;
+        text-align: center;
+        z-index: 3;
+    }
+    
+    .Mission {
+        color: beige;
+        font-family: Charm, sans-serif;
+        font-size: 30px;
+        position: absolute;
+        top: 600px;
+        left: 0%;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        z-index: 3;
+    }
+    
+    .SkibidiPledge {
+        position: absolute;
+        top: 930px;
+        left: 10%;
+        z-index: 3;
+        width: 180px;
+    }
+    
+    .wave-divider {
+        width: 100%;
+        height: 490px;
+        display: block;
+        position: absolute;
+        top: 280px;
+        transition: margin-top 0.5s ease-in-out;
+        /* Smooth movement */
+        z-index: 3;
+    }
+    
+    .wave-divider path {
+        width: 100%;
+        height: 490px;
+        display: block;
+        position: absolute;
+        top: 270px;
+        transition: margin-top 0.5s ease-in-out;
+        /* Smooth movement */
+        z-index: 13;
+    }
+    
+    .skibbidi-page {
+        background-color: #3C291E;
+        z-index: 1;
+    }
+    
+    .color-wash {
+        opacity: 90%;
+        /* Corrected opacity */
+        z-index: 3;
+        mix-blend-mode: overlay;
+    }
+    
+    .video-bannerHomePage {
+        position: relative;
+        width: 100%;
+        height: 75%;
+        overflow: hidden;
+        border-radius: 0%;
+        display: inline-block;
+        top: -50px;
+        left: 0px;
+        z-index: 2;
+    }
+    
+    .video-bannerHomePage video {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 0%;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: none;
+        z-index: 10;
+    }
+    
+    /* Overlay text */
+    .video-bannerHomePage .overlay-textHomePage {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: beige;
+        text-align: center;
+        z-index: 5;
+        bottom: 0;
+        width: 500px;
+        height: fit-content;
+    }
+    
+    .video-bannerHomePage h1 {
+        font-size: 3rem;
+        margin: 0;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 7px;
+        font-size: 80px;
+        color: beige;
+        position: absolute;
+        top: 227px;
+        right: -25%;
+        z-index: 10;
+        width: 150%;
+        height: 100%;
+    }
+    /*Home End*/
+    /*Donate*/
+    .Donate {
+        top: 480px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 20px;
+        gap: 50px;
+        width: 90%;
+        align-items: flex-start;
+        background-color: #3C291E;
+        border-style: solid;
+        position: absolute;
+        left: 5%;
+    }
+    .overlay-textDonate h1{
+        position: absolute;
+        top: 220px;
+        left: 30%;
+        width: 500px;
+        z-index: 5;
+    }
+    .DonateParagragh p{
+        position: absolute;
+        top: 57%;
+        left: 2%;
+        width: 95%;
+        text-align: center;
+        font-size: 20px;
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    
+    /*Donate End*/
+    
+    /*Contact*/
+    .ContactParagragh{
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        width: 90%;
+        text-align: center;
+        font-size: 20px;
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    .ContactEmailHeading h1{
+        font-size: 10px;
+        width: 100%;
+        margin-top: 12%;
+        position: absolute;
+        right:38.5%;
+        font-size: 30px;
+    }
+    .EmailContact p{
+        display: flex;
+        flex-direction: row; /* Stack items vertically */
+        justify-content: space-around;
+        text-align: center;
+        font-size: 20px;
+        position: absolute;
+        left:2%;
+        top:75%;
+        height: fit-content;
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    
+    .ContactPhoneHeading h1{
+        font-size: 10px;
+        width: 100%;
+        margin-top: 22%;
+        position: absolute;
+        right:18.5%;
+        font-size: 30px;
+    }
+    .PhoneContact p{
+        display: flex;
+        flex-direction: row; /* Stack items vertically */
+        justify-content: space-around;
+        text-align: center;
+        font-size: 20px;
+        position: absolute;
+        left:27%;
+        top:75%;
+        height: fit-content;
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    /*Contact End*/
+    
+    /*Commandments*/
+    .CommandmentsHeading{
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 250px;
+        left: 50%;
+    }
+    
+    .CommandmentsBackground img{
+         width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;   
+    }
+    .video-bannerCommandments h1 {
+        font-size: 3rem;
+        margin: 0;
+        font-size: 50px;
+        color: beige;
+        position: absolute;
+        top: -7px;
+    }
+    
+    .CommandmentsBody{
+        min-height: auto;
+        width: auto;
+        height: auto;
+        background-image: url('church-7784705_1280.jpg');
+        background-size: cover; /* Ensures the image covers the whole area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        z-index: 9;
+    }
+    .CommandmentsMain{
+        min-height: auto;
+        width: auto;
+        height: auto;
+        background-image: url('church-7784705_1280.jpg');
+        background-size: cover; /* Ensures the image covers the whole area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        z-index: 9;
+        overflow-x: hidden;
+    }
+    ol {
+        display: block;
+        list-style-type: decimal;
+        background-color: #3C291E;
+        width: 50%;
+        height: auto;
+        font-size: 25px;
+        padding-right: 0em;
+        padding-left: 5em;
+        text-wrap: pretty;
+        position: absolute;
+        top: 50%;
+        left: 260px;
+        border-radius: 20%;
+    }
+    
+    /*CommandmentsEnd*/
+    .overlay-text h1{
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 250px;
+        left: 50%;
+    }
+    /*Skibidi Songs*/
+    .OhSkibidi p{
+        position: absolute;
+        left: 3%;
+        top: 8px;
+        width: 500px;
+        z-index: 5;
+        font-size: 17px;
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    .OhSkibidi {
+        position: absolute;
+        top: 350px;
+        left: 5%;
+        width: 530px;
+        height: 150px;
+        z-index: 5;
+        font-size: 17px;
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    .OhSkibidiHeading h1{
+        position: absolute;
+        top: 310px;
+        left: 5%;
+        width: 500px;
+        z-index: 5;  
+        font-size: 25px;
+    }
+    
+    .SkibidisBowl p{
+        position: absolute;
+        right: 3%;
+        top: 8px;
+        width: 500px;
+        height: 95%;
+        z-index: 5;
+        font-size: 17px;
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    .SkibidisBowl {
+        position: absolute;
+        top: 350px;
+        right: 5%;
+        width: 539px;
+        height: 180px;
+        z-index: 5;
+        font-size: 17px;
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    .SkibidisBowlHeading h1{
+        position: absolute;
+        top: 310px;
+        right: 5%;
+        width: 500px;
+        z-index: 5;  
+        font-size: 25px;
+    }
+    
+    .overlay-textSongs{
+        position: absolute;
+        top: 220px;
+        left: 30%;
+        width: 500px;
+        z-index: 5;   
+    }
+    /*Skibidi Songs End*/
+    
+    /*Sermons*/
+    .SermonOneHeading h1{
+        position: absolute;
+        top: 350px;
+        Right: 46.7%;
+        width: 100%;
+        font-size: 30px;
+        width: auto;
+        height: auto;
+        text-align: left;
+    }
+    
+    .SermonOne{
+        color: beige;
+        font-family: Charm, sans-serif;
+        font-size: 20px;
+        position: absolute;
+        top: 390px;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        border-radius: 10%;
+        background-color: #3C291E;
+    }
+    .SermonOne p{
+        position: absolute;
+        top: 30px;
+        left: 3%;
+        width: 95%;
+        height: 90%;
+        text-align: left;
+        background-color: #3C291E;
+        border-radius: 10%;
+    }
+    .SermonsBody{
+        min-height: 100vh;
+        min-width: 100vw;
+        background-image: url('church-7784705_1280.jpg');
+        background-size: cover; /* Ensures the image covers the whole area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        z-index: 9;
+    }
+    .SermonsMain{
+        min-height: 100vh;
+        min-width: 100vw;
+        background-image: url('church-7784705_1280.jpg');
+        background-size: cover; /* Ensures the image covers the whole area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        z-index: 9;
+        overflow-x: hidden;
+    }
+    /*Sermon end*/
+    </style>
+</body>
+
+</html>
